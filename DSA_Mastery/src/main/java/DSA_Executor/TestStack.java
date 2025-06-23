@@ -1,4 +1,4 @@
-package DSA.program;
+package DSA_Executor;
 
 import Stack.ArrayStack;
 
