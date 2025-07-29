@@ -2,7 +2,7 @@ package LinkedList;
 
 import java.util.Iterator;
 
-public class LinkedListExcecise1<T> implements Iterable<T>{
+public class SinglyLinkedListExcecise1<T> implements Iterable<T>{
 	// 2. Initialize the head
 		Node head;
 		
@@ -17,7 +17,7 @@ public class LinkedListExcecise1<T> implements Iterable<T>{
 	
 	
 	//3. constructor set head = null
-	public LinkedListExcecise1() {		
+	public SinglyLinkedListExcecise1() {		
 		head = null;
 	}
 	
