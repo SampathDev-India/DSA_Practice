@@ -12,6 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ExtendWith(OutputCaptureExtension.class)
 public class AppTest {
 
+	/**
+	 * write the test case then -> runAs -> maven Build -> type clean verify . check the report 
+	 * @param capture
+	 * @throws Exception
+	 */
     @Test
     void testHello(CapturedOutput capture) throws Exception {
         App.main(new String[]{});

@@ -5,7 +5,7 @@ import LinkedList.DoublyLinkedList;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Data structure tutorial Begins");
+        System.out.println("Hello World!");
         
 
 //        LinkedListExcecise1<Integer> list = new LinkedListExcecise1<Integer>();  
@@ -17,18 +17,18 @@ public class App {
 //        list.reverse();
 //        list.display();
         
-        DoublyLinkedList dl = new DoublyLinkedList();
-        dl.insertAtBegining(1);
-        dl.insertAtBegining(2);
-        dl.insertAtEnd(3);
-        dl.display();
-        dl.displayRev();
-        System.out.println(" ");
-        dl.deleteHeadNode();
-        dl.deleteTailNode();
-        dl.display();
-        System.out.println(" ");
-        dl.displayRev();
+//        DoublyLinkedList dl = new DoublyLinkedList();
+//        dl.insertAtBegining(1);
+//        dl.insertAtBegining(2);
+//        dl.insertAtEnd(3);
+//        dl.display();
+//        dl.displayRev();
+//        System.out.println(" ");
+//        dl.deleteHeadNode();
+//        dl.deleteTailNode();
+//        dl.display();
+//        System.out.println(" ");
+//        dl.displayRev();
 
     }
 }
