@@ -1,4 +1,4 @@
-package Sorting;
+package InterviewProblems;
 
 import java.util.ArrayList;
 import java.util.Collections;
