@@ -4,18 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapTutorial {
-	 private Map<String, Integer> map = new HashMap<>();
+		public static void main(String[] args) {
+			
+			Map<String, Integer> map = new HashMap<>();			 
+			 map.put("one",1);
+			 map.put("two",2);
+			 map.put("three",3);
+			 
+			 System.out.println("Print map all Keys : "+map.keySet());
+			 System.out.println("Print map all values : "+map.values());
 
-	    public void putValue(String key, Integer value) {
-	        map.put(key, value);
-	    }
-
-	    public Integer getValue(String key) {
-	        return map.get(key);
-	    }
-
-	    public int getSize() {
-	        return map.size();
-	    }
-
+		} 
 }

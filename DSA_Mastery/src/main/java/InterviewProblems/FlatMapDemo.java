@@ -13,9 +13,11 @@ public class FlatMapDemo {
 				);
 		System.out.println("Skills with list of list : "+ skills);
 		
-		List<String> allSkills = skills.stream().flatMap(skill -> skill.stream()).collect(Collectors.toList());
+		List<String> allSkills = skills.stream()
+									   .flatMap(skill -> skill.stream())
+									   .collect(Collectors.toList());
 		
-		System.out.println(" "+ allSkills);
+//		System.out.println(" "+ allSkills);
 		
 		List<String> skillsStartswithS = allSkills.stream().filter(skill -> skill.startsWith("S")).collect(Collectors.toList());
 		
