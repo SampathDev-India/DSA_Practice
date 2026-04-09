@@ -16,8 +16,12 @@ public class CircularLinkedList <T>{
 		super();
 		last = null;
 	}
-	
-	// insert at the beggining 
+
+
+	/**
+	 * insert at the beggining
+	 * @param val
+	 */
 	public void insertAtBegining(T val) {
 		Node newNode = new Node(val);
 		if(last == null) {
@@ -28,8 +32,12 @@ public class CircularLinkedList <T>{
 			last.next = newNode;
 		}
 	}
-	
-	//insert at the end 
+
+
+	/**
+	 * insert at the end
+	 * @param val
+	 */
 	public void insertAtEnd(T val) {
 		Node newNode = new Node(val);
 		

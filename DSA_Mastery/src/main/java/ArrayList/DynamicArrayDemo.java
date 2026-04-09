@@ -71,7 +71,12 @@ class DynamicArray<T> implements Iterable<T>{
 		capacity = initialCapacity;
 	}
 
-	//insert the Value at the End
+
+	/**
+	 * Add the val in the existing List
+	 * insert the Value at the End
+	 * @param val
+	 */
 	public void add(T val) {
 		if(size == capacity)
 			expandArray();
@@ -84,8 +89,12 @@ class DynamicArray<T> implements Iterable<T>{
 		capacity *=2;
 		arr = java.util.Arrays.copyOf(arr, capacity);
 	}
-	
-	//Insert the value at the specific possition  size =3, pos =1  1,3,4
+
+	/**
+	 * Insert the value at the specific possition  size =3, pos =1  1,3,4
+	 * @param pos
+	 * @param val
+	 */
 	public void add(int pos, T val) {
 		if(size == capacity)
 			expandArray();
@@ -98,15 +107,21 @@ class DynamicArray<T> implements Iterable<T>{
 		arr[pos] = val;
 		size++;			
 	}
-	
-	//Display the Array
+
+	/**
+	 * Display the Array
+	 */
 	public void display() {
 		for(int i=0;i<size;i++) {
 			System.out.print(arr[i]+" ");			
 		}
 	}
 		
-	//delete the specific element based on possition
+
+	/**
+	 * delete the specific element based on possition
+	 * @param pos
+	 */
 	public void delete(int pos) {
 		for(int i= pos+1;i<size;i++) {
 			arr[i-1]= arr[i];
